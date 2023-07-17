@@ -5,16 +5,18 @@ public class TexttestFixture {
         System.out.println("OMGHAI!");
 
         Item[] items = new Item[] {
-                new Item("+5 Dexterity Vest", 10, 20), //
-                new Item("Aged Brie", 2, 0), //
-                new Item("Elixir of the Mongoose", 5, 7), //
-                new Item("Sulfuras, Hand of Ragnaros", 0, 80), //
-                new Item("Sulfuras, Hand of Ragnaros", -1, 80),
-                new Item("Backstage passes to a TAFKAL80ETC concert", 15, 20),
-                new Item("Backstage passes to a TAFKAL80ETC concert", 10, 49),
-                new Item("Backstage passes to a TAFKAL80ETC concert", 5, 49),
+                new Item(ItemName.PLUS_5_DEXTERITY_VEST, 10, 20), //
+                new Item(ItemName.PLUS_5_DEXTERITY_VEST, 0, 20), //
+                new Item(ItemName.AGED_BRIE, 0, 0), //
+                new Item(ItemName.ELIXIR_OF_THE_MONGOOSE, 5, 7), //
+                new Item(ItemName.SULFURS_HAND_OF_RAGNAROK, 0, 80), //
+                new Item(ItemName.SULFURS_HAND_OF_RAGNAROK, -1, 80),
+                new Item(ItemName.BACKSTAGE_PASSES_TO_A_TAFKAL_80_ETC_CONCERT, 15, 20),
+                new Item(ItemName.BACKSTAGE_PASSES_TO_A_TAFKAL_80_ETC_CONCERT, 10, 49),
+                new Item(ItemName.BACKSTAGE_PASSES_TO_A_TAFKAL_80_ETC_CONCERT, 5, 47),
+                new Item(ItemName.BACKSTAGE_PASSES_TO_A_TAFKAL_80_ETC_CONCERT, 0, 47),
                 // this conjured item does not work properly yet
-                new Item("Conjured Mana Cake", 3, 6) };
+                new Item(ItemName.CONJURED_MANA_CAKE, 3, 6) };
 
         GildedRose app = new GildedRose(items);
 
@@ -30,7 +32,7 @@ public class TexttestFixture {
                 System.out.println(item);
             }
             System.out.println();
-            app.updateQuality();
+            app.dailyUpdateOfItemsQuality();
         }
     }
 
